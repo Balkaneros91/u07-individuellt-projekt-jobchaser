@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { setJobs, setLoading } from "@/redux/jobSlice";
 import { RootState } from "@/redux/store";
 import SearchBar from "@/components/SearchBar";
+import CategoryFilter from "@/components/CategoryFilter";
 
 const JobsPage = () => {
 
@@ -34,6 +35,7 @@ const JobsPage = () => {
     <div className="grid grid-cols-1 gap-6 min-h-screen px-8 py-20">
       <h1 className="text-2xl font-bold">Job Listings</h1>
       <SearchBar />
+      <CategoryFilter />
       {loading ? (
         <p>Loading...</p>
       ) : jobs.length > 0 ? (
