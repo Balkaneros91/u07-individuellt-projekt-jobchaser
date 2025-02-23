@@ -10,13 +10,19 @@ interface JobListProps {
   jobs: Job[];
 }
 
-const JobList:React.FC<JobListProps> = ({jobs}) => {
-    const searchTerm = useSelector((state: RootState) => state.searchTerm); 
+const JobList:React.FC<JobListProps> = ({}) => {
 
-    const filteredJobs = jobs.filter((job: Job) =>
-        job.title.toLowerCase().includes(searchTerm.toLowerCase()) || 
-        job.location.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const searchQuery = useSelector((state: RootState) => state.jobs.searchQuery);
+    const selectedCategory = useSelector((state: RootState) => state.jobs.selectedCategory);
+    const jobs = useSelector((state: RootState) => state.jobs.filteredJobs);
+
+    const filteredJobs = jobs.filter((job: Job) => {
+    const matchesSearch = job.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                          job.location.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory = selectedCategory === "" || job.job_category === selectedCategory;
+
+    return matchesSearch && matchesCategory;
+});
 
   if(filteredJobs.length === 0) {
     return <p>No jobs available</p>;
