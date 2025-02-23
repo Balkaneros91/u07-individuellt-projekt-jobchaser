@@ -1,9 +1,13 @@
 "use client";
 
+import { Provider } from "react-redux";
+import { store } from '@/redux/store';
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from '../components/Header';
 import Footer from "@/components/Footer";
+import { DarkModeProvider } from "@/components/DarkModeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +28,13 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
-        <main className="bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">{children}</main>
-        <Footer />
+        <Provider store={store}>
+          <DarkModeProvider>
+            <Header />
+            <main className="bg-lightBackground dark:bg-darkBackground text-lightText dark:text-darkText">{children}</main>
+            <Footer />
+          </DarkModeProvider>
+        </Provider>
       </body>
     </html>
   );

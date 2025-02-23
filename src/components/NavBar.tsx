@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import ThemeToggle from "./ThemeToggle";
 
 const NavBar = () => {
   return (
@@ -10,6 +11,7 @@ const NavBar = () => {
         <li><Link href="/jobs" className="hover:underline">Jobs</Link></li>
         <li><Link href="/signup" className="hover:underline">Sign Up</Link></li>
         <li><Link href="/signin" className="hover:underline">Sign In</Link></li>
+        <ThemeToggle />
       </ul>
     </nav>
   )
