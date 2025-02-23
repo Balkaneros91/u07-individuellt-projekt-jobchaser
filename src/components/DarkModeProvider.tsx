@@ -18,9 +18,11 @@ export function DarkModeProvider({ children }: DarkModeProviderProps) {
   const [isDarkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
-    const storedDarkMode = localStorage.getItem('isDarkMode');
-    if (storedDarkMode) {
+    if (typeof window !== 'undefined') {
+      const storedDarkMode = localStorage.getItem('isDarkMode');
+      if (storedDarkMode) {
         setDarkMode(JSON.parse(storedDarkMode));
+      }
     }
   }, []);
 

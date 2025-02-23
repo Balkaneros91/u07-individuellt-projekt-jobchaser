@@ -8,9 +8,17 @@ export default {
   ],
   theme: {
     extend: {
+      transitionProperty: {
+        backgroundColor: "background-color",
+        textColor: "color",
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        lightBackground: "#ffffff",
+        lightText: "#000000",
+
+        darkBackground: "#1a1a1a",
+        darkText: "#ffffff",
+        darkBorder: "#333333",
       },
     },
   },
