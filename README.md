@@ -1,3 +1,39 @@
+# u05 - Todolist i Typescript
+
+## Innehållsförteckning
+- [u05 - Todolist i Typescript](#u05---todolist-i-typescript)
+  - [Innehållsförteckning](#innehållsförteckning)
+- [u07-individuell-uppgift-jobchaser - ACA](#u07-individuell-uppgift-jobchaser---aca)
+  - [Live Site](#live-site)
+- [Veckans teoretiska frågor - V.1](#veckans-teoretiska-frågor---v1)
+- [Veckans teoretiska frågor - V.2](#veckans-teoretiska-frågor---v2)
+- [Veckans teoretiska frågor - V.3](#veckans-teoretiska-frågor---v3)
+- [Veckans teoretiska frågor - V.4](#veckans-teoretiska-frågor---v4)
+  - [Individual project](#individual-project)
+  - [Technologies Used](#technologies-used)
+    - [Languages Used](#languages-used)
+    - [Frameworks, Libraries \& Programs Used](#frameworks-libraries--programs-used)
+    - [Browser Compatibility](#browser-compatibility)
+  - [Lighthouse](#lighthouse)
+    - [Lighthouse Mobile Views](#lighthouse-mobile-views)
+    - [Lighthouse Desktop Views](#lighthouse-desktop-views)
+    - [W3C HTML Validator](#w3c-html-validator)
+    - [JIGSAW W3C CSS Validator](#jigsaw-w3c-css-validator)
+    - [JShint](#jshint)
+    - [Chrome DevTools](#chrome-devtools)
+  - [Installation](#installation)
+
+
+
+
+# u07-individuell-uppgift-jobchaser - ACA 
+
+## Live Site
+
+The live deployed application can be found deployed on [Vercel]().
+
+The link to my Github repository's [Github Repo](https://github.com/Balkaneros91/todo-list-typescript-Balkaneros91).
+
 # Veckans teoretiska frågor - V.1
 
 - Allmänt om ramverket React: Hur/Varför uppkom det? Vad är centralt i React?
@@ -97,3 +133,106 @@ It's an official and recommended toolset for writing Readux logic. It simplifies
 - När, i vilka situationer vill man använda Redux Toolkit?
 
 RTK is used for managing complex global state across an application. It's useful in cases like when multiple components needs to access the shared state, or for need of advanced state managments features like middleware, asynchronous actions or caching. Using RTK simplifies the process and improves maintainability.
+
+## Individual project
+
+![amiresponsive](assets/images/README/amiresponsive.png)
+
+Todo App is a showcase of a very short but compact course in which we have gone through the basics of Typescript, the superset of Javascript. It has been challenging and there is always room for improvment and I am looking forward to dig deeper so I could learn to use typescript for some furture projects and specially because, if I understood well it is gonna make it easier for learning React and more.
+
+My App is a fully functional list in which the user can perform the whole CRUD process of adding, updating, deleting and reviewing the items in the todo list.
+
+[Back to content list](<#innehållsförteckning>)
+
+
+## Technologies Used
+
+### Languages Used
+
+<ul>
+<li>HTML/CSS</li>
+<li>JavaScript</li>
+<li>Next.JS</li>
+<li>Typescript</li>
+</ul>
+
+### Frameworks, Libraries & Programs Used
+
+<ul>
+<li>Github</li>
+<li>Gitpod</li>
+<li>VS Code</li>
+<li>REact Hook Form</li>
+<li>Redux Toolkit</li>
+</ul>
+
+<hr>
+
+### Browser Compatibility
+
+| Browser       | Pass/Fail |
+| ------------- | --------- |
+| Google Chrome | Pass      |
+| Safari        | Pass      |
+| Opera         | Pass      |
+| Firefox       | Pass      |
+
+<br>
+
+[Back to content list](<#innehållsförteckning>)
+
+<br>
+
+
+## Lighthouse
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to check the quality of website pages accross mobile and desktop view. 
+
+### Lighthouse Mobile Views
+
+<details>
+<summary>Click here to see the lighthouse for mobile views:</summary>
+
+![Lighthouse](src/readme_img/lighthouse_mobile_ts.png)
+
+</details>
+
+### Lighthouse Desktop Views
+
+<details>
+<summary>Click here to see the lighthouse for desktop views:</summary>
+
+![Lighthouse](src/readme_img/lighthouse_desktop_ts.png)
+
+</details> <br>
+
+### W3C HTML Validator
+- [W3C Markup Validation Serice](https://validator.w3.org/) was used to validate HTML code.
+![W3C HTML Validator](src/readme_img/html_validator_ts.png) <br>
+
+### JIGSAW W3C CSS Validator
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) was used to validate CSS code.
+![W3C CSS Validator- JIGSAW](src/readme_img/css_validator_ts.png) <br>
+
+### JShint
+- [JShint Validator](https://jshint.com/) was used to validate JS code.
+
+<br>
+
+[Back to content list](<#innehållsförteckning>)
+
+<br>
+
+### Chrome DevTools
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    played a big role in projects development. I used it for testing, debugging. Further more for exploring around and helping myself to fix HTML and CSS difficulties with it. It help me a lot with setting the responsiveness accross different screen sizes.
+
+
+## Installation
+1. Klona projektet från GitHub:
+   ```bash
+   git clone https://github.com/username/portfolio-project.git
+
+[Back to content list](<#innehållsförteckning>)
+
+-----
+Happy coder :)
