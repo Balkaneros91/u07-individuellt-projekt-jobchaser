@@ -3,7 +3,7 @@
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
-import { Job } from "./Job";
+import { Job } from "../app/interfaces/Job";
 import JobItem from "./JobItem";
 
 interface JobListProps {

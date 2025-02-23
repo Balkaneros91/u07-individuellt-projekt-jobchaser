@@ -1,6 +1,6 @@
 "use client";
 
-import { Job } from "./Job";
+import { Job } from "../app/interfaces/Job";
 import Link from "next/link";
 
 interface JobItemProps {

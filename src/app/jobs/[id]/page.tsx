@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
-import { Job } from "@/components/Job";
+import { Job } from "@/app/interfaces/Job";
 
 const JobDetails = () => {
   const { id } = useParams();
