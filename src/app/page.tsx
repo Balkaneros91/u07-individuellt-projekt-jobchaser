@@ -1,18 +1,21 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Home() {
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <header className="flex gap-6 flex-wrap items-center justify-center">
-        <h1>JobbChaser App</h1>
-      </header>
+    <div className="min-h-screen flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold">Welcome to JobChaser</h1>
+      <p>Find your dream job today!</p>
       
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <p>JobbChaser Main</p>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-      <p>JobbChaser Footer</p>
-      </footer>
+      {/* Link to Jobs Page */}
+      <Link href="/jobs">
+        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded">
+          Browse Jobs
+        </button>
+      </Link>
     </div>
   );
+
 }
