@@ -1,8 +1,6 @@
-# u05 - Todolist i Typescript
+# u07-individuellt-projekt-jobchaser
 
 ## Innehållsförteckning
-- [u05 - Todolist i Typescript](#u05---todolist-i-typescript)
-  - [Innehållsförteckning](#innehållsförteckning)
 - [u07-individuell-uppgift-jobchaser - ACA](#u07-individuell-uppgift-jobchaser---aca)
   - [Live Site](#live-site)
 - [Veckans teoretiska frågor - V.1](#veckans-teoretiska-frågor---v1)
